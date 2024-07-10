@@ -3,7 +3,7 @@ Service:
   DeployType: ros
   DeployMetadata:
     ServiceInstanceNameRule:
-      Prefix: halo
+      Prefix: grafana
     SupplierDeployMetadata:
       ArtifactRelation:
         'centos_7_9_x64_20G_alibase_20240403.vhd':
@@ -20,13 +20,13 @@ Service:
   ServiceType: private
   ServiceInfo:
     Locale: zh-CN
-    ShortDescription: halo deploy
+    ShortDescription: grafana deploy
     Image: 'resources/icons/service_logo.png'
 Artifact:
   EcsImage:
     ArtifactType: EcsImage
-    ArtifactName: halo
-    Description: halo
+    ArtifactName: grafana
+    Description: grafana
     ArtifactProperty:
       RegionId: ${ImageBuilder.EcsImage.RegionId}
       ImageId: ${ImageBuilder.EcsImage.SourceImageId}
@@ -52,8 +52,6 @@ ImageBuilder:
       yum -y install docker-ce jq
       systemctl enable docker
       systemctl start docker
-
-      mkdir -p /home/admin/application
 
       cd /root/
       git clone https://github.com/aliyun-computenest/quickstart-grafana
