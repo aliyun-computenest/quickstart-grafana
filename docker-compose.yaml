@@ -1,8 +1,9 @@
 version: "3"
 services:
-  halo:
+  grafana:
     image: grafana/grafana-enterprise
     volumes:
       - /data/grafana:/var/lib/grafana
     ports:
       - "3000:3000"
+    user: "root"
