@@ -1,8 +1,7 @@
 # Grafana 社区版快速部署
 
 ## 概述
-Grafana是一个开源数据可视化和监控平台，为实时监控、数据分析和可视化提供强大的仪表板和图表功能。
-。 详情请查看[Grafana官网](https://grafana.com/docs/grafana/latest/)。
+Grafana是一个开源数据可视化和监控平台，为实时监控、数据分析和可视化提供强大的仪表板和图表功能。详情请查看[Grafana官网](https://grafana.com/docs/grafana/latest/)。
 
 
 ## 计费说明
